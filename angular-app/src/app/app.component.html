@@ -1,1 +1,29 @@
-<h1> Devops Exam </h1>
+<div class="container">
+
+<table class="table table-active">
+<thead>
+<tr>
+  <th> index </th>
+  <th>emp id </th>
+  <th>name </th>
+  <th>salary </th>
+  <th> age</th>
+
+</tr>
+</thead>
+<tbody> 
+  <tr *ngFor="let e of employees; let index = index"> 
+    <td> {{index + 1}}</td>
+    <td>{{e.empid}} </td>
+    <td> {{e.name}}</td>
+    <td>{{e.salary}} </td>
+    <td> {{e.age}}</td>
+  </tr>
+
+
+</tbody>
+
+</table>
+
+
+</div> 
